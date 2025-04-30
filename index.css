@@ -1,0 +1,13 @@
+.Checked{
+    text-decoration: line-through;
+    color: red;
+}
+
+.noChecked {
+    text-decoration: none;
+    color: black;
+}
+
+#textoCaixaAlta{
+    text-transform: uppercase;
+}

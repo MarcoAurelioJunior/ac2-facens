@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>AC2 - LP</title>
+</head>
+<body>
+    <h2>Adivinhe o número</h2>
+    <input type="text" id="resposta">
+    <button id="btn-adv" onclick="verifica()">Adivinhe</button>
+    <p id="resultado"></p>
+
+    <hr>
+
+    <h2>TEXTO EM CAIXA ALTA</h2>
+
+    <input type="text" name="text" id="textoCaixaAlta" onkeydown="caixaAlta(event)">
+
+    <hr>
+
+    <h2>Digite uma tarefa</h2>
+
+    <input type="text" name="text" id="textoList">
+    <button onclick="addTask()">Adicionar</button>
+
+    <form action="">
+        <ul id="list">
+        </ul>
+    </form>
+    
+
+    <hr>
+
+    <h2>Escolha o seu Personagem</h2>
+
+    <fieldset>
+        <div>
+            <input type="radio" name="personagem" id="mago" value="mago">
+            <label for="mago">Mago</label>
+        
+            <input type="radio" name="personagem" id="guerreiro" value="guerreiro">
+            <label for="guerreiro">Guerreiro</label>
+    
+            <input type="radio" name="personagem" id="arqueiro" value="arqueiro">
+            <label for="arqueiro">Arqueiro</label>
+        </div>
+    </fieldset>
+        
+    <button onclick="confirmarEscolha()">Confirmar</button>
+
+
+    <div>
+        <img src="" alt="" id="personagemIMG">
+        <p id="descPersonagem"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
